@@ -1,0 +1,18 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "黑翼召唤器·仓库加载版",
+  "id": "8ea1ae67-9ee1-4db9-ae4f-4eac12fca73b",
+  "content": "// 从自己的仓库加载黑翼召唤器模块；必须导入酒馆助手脚本库并启用。\n$(async () => {\n  try {\n    await import('https://cdn.jsdelivr.net/gh/qq85316902-cloud/nga@main/blackwing-summoner.js');\n  } catch (error) {\n    console.error('[黑翼召唤器仓库加载]', error);\n    toastr.error('装备模块加载失败：请检查网络、仓库文件和CDN，或改用本地版导入JSON');\n  }\n});\n",
+  "info": "从qq85316902-cloud/nga加载。仅菲娜，主手绑定，按装备生成规则自动成长。先停用旧版黑翼修复脚本。",
+  "button": {
+    "enabled": true,
+    "buttons": [
+      {
+        "name": "发放并修复黑翼召唤器",
+        "visible": true
+      }
+    ]
+  },
+  "data": {}
+}

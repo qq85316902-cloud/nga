@@ -1,0 +1,8 @@
+{
+  "name": "nga-blackwing-summoner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "菲娜绑定装备：黑翼召唤器，MVU发放与自动成长模块",
+  "scripts": { "test": "node --test blackwing.test.cjs" },
+  "engines": { "node": ">=18" }
+}
