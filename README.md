@@ -1,8 +1,11 @@
-# 当前版本：黑翼通用玩家版＋夜骑资源技能（短文本）
+# 当前版本：黑翼通用玩家版＋夜骑资源技能（插卡短文本）
 
-使用 [blackwing-user-night-helper.json](blackwing-user-night-helper.json) 导入酒馆助手脚本库，覆盖同ID旧辅助计算，保留MVU。绑定user，任意玩家姓名适用；无须菲娜内置开局。四项资源技能与武器效果均为短文本，保留空白技能树，重复登记不补满次数。规则与用法见 [night-resource-skills.md](night-resource-skills.md)。技能数据读取 [night-resource-skills-short.json](night-resource-skills-short.json)，内置同版备份。
+使用 [blackwing-user-night-helper.json](blackwing-user-night-helper.json) 导入酒馆助手脚本库，覆盖同ID旧辅助计算，保留MVU。绑定user，任意玩家姓名适用；无须菲娜内置开局。四项资源技能与武器效果均为短文本，保留空白技能树，重复登记不补满次数。规则与用法见 [night-resource-skills.md](night-resource-skills.md)。技能数据读取 [night-resource-skills-insert.json](night-resource-skills-insert.json)，内置同版备份。
 
 下方为早期菲娜专属独立模块的说明；该旧模块不要与新版辅助计算同时运行。
+
+
+现版武器首词条为暗翼卡槽，四项资源技能必须插卡，只扣技能次数；没有独立通用读卡伤害词条。
 
 ---
 
