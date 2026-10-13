@@ -2,7 +2,7 @@
 
 导入 [blackwing-user-night-helper.json](blackwing-user-night-helper.json) 到酒馆助手脚本库，覆盖同ID旧辅助计算，点击「发放并校验黑翼召唤器」更新存档。
 
-武器效果已精简，并于35级解锁防御降临、75级解锁戏敌降临、100级解锁疾风降临；未解锁效果不写入存档面板。当前文本见 [blackwing-unlock-effects.json](blackwing-unlock-effects.json)，保留原机制数值；装备等级、品质及属性成长不变，实际发动由游戏叙事与MVU结算。
+武器效果已精简，并于5级解锁防御降临、75级解锁戏敌降临、100级解锁疾风降临；未解锁效果不写入存档面板。当前文本见 [blackwing-unlock-effects.json](blackwing-unlock-effects.json)，保留原机制数值；装备等级、品质及属性成长不变，实际发动由游戏叙事与MVU结算。
 
 原四张精简资源卡保留，武器降临/声波降临/契约降临/最终降临仍每战恢复2/2/1/1次。武器疾风降临只按文本长休恢复，不属于四卡恢复脚本。保留新版HP修复、空白技能树与已用次数；无需变身、插卡播音及契约兽施放即逝写在武器介绍。规则及用法见 [night-resource-skills.md](night-resource-skills.md)。
 
@@ -70,3 +70,5 @@
 
 代码在 `blackwing-summoner.js`；规则依据在 `equipment-rules.md`；1 级装备示例在 `blackwing-level-1.json`。如果修改代码，请用 `node package.cjs` 重新生成导入 JSON，再运行测试。
 
+
+声波降临的音波干扰改为15尺锥形群体雷鸣伤害，DC12敏捷豁免成功减半，召唤倍率60%保留，每战2次。
