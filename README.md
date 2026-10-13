@@ -1,8 +1,8 @@
-# 当前版本：黑翼三项神话效果＋夜骑四卡
+# 当前版本：黑翼精简逐步解锁＋夜骑四卡
 
 导入 [blackwing-user-night-helper.json](blackwing-user-night-helper.json) 到酒馆助手脚本库，覆盖同ID旧辅助计算，点击「发放并校验黑翼召唤器」更新存档。
 
-武器三条效果按用户指定替换为防御降临、戏敌降临、疾风降临；详细原文见 [blackwing-mythic-effects.json](blackwing-mythic-effects.json)。三项固定写入武器，装备等级、品质与属性成长沿用现有规则；实际技能发动由游戏叙事和MVU结算。
+武器效果已精简，并于35级解锁防御降临、75级解锁戏敌降临、100级解锁疾风降临；未解锁效果不写入存档面板。当前文本见 [blackwing-unlock-effects.json](blackwing-unlock-effects.json)，保留原机制数值；装备等级、品质及属性成长不变，实际发动由游戏叙事与MVU结算。
 
 原四张精简资源卡保留，武器降临/声波降临/契约降临/最终降临仍每战恢复2/2/1/1次。武器疾风降临只按文本长休恢复，不属于四卡恢复脚本。保留新版HP修复、空白技能树与已用次数；无需变身、插卡播音及契约兽施放即逝写在武器介绍。规则及用法见 [night-resource-skills.md](night-resource-skills.md)。
 
