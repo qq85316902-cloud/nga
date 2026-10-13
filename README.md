@@ -1,14 +1,14 @@
-# 当前版本：黑翼通用玩家版＋夜骑资源技能（插卡短文本）
+# 当前版本：黑翼三项神话效果＋夜骑四卡
 
-使用 [blackwing-user-night-helper.json](blackwing-user-night-helper.json) 导入酒馆助手脚本库，覆盖同ID旧辅助计算，保留MVU。绑定user，任意玩家姓名适用；无须菲娜内置开局。四项资源技能与武器效果均为短文本，保留空白技能树，重复登记不补满次数。规则与用法见 [night-resource-skills.md](night-resource-skills.md)。技能数据读取 [night-resource-skills-insert.json](night-resource-skills-insert.json)，内置同版备份。
+导入 [blackwing-user-night-helper.json](blackwing-user-night-helper.json) 到酒馆助手脚本库，覆盖同ID旧辅助计算，点击「发放并校验黑翼召唤器」更新存档。
 
-下方为早期菲娜专属独立模块的说明；该旧模块不要与新版辅助计算同时运行。
+武器三条效果按用户指定替换为防御降临、戏敌降临、疾风降临；详细原文见 [blackwing-mythic-effects.json](blackwing-mythic-effects.json)。三项固定写入武器，装备等级、品质与属性成长沿用现有规则；实际技能发动由游戏叙事和MVU结算。
 
+原四张精简资源卡保留，武器降临/声波降临/契约降临/最终降临仍每战恢复2/2/1/1次。武器疾风降临只按文本长休恢复，不属于四卡恢复脚本。保留新版HP修复、空白技能树与已用次数；无需变身、插卡播音及契约兽施放即逝写在武器介绍。规则及用法见 [night-resource-skills.md](night-resource-skills.md)。
 
-现版武器首词条为暗翼卡槽，四项资源技能必须插卡，只扣技能次数；没有独立通用读卡伤害词条。
+下方为早期菲娜专属独立模块的历史说明，旧模块不要与当前辅助计算同时启用。
 
 ---
-
 # 菲娜 · 黑翼召唤器
 
 这是供创世回廊、酒馆助手及 MVU 使用的装备模块。脚本会把黑翼召唤器发放给存档主角「菲娜」，装备在主手，并在变量更新时同步等级、品质、属性和武器面板。
@@ -69,3 +69,4 @@
 运行 `node --test blackwing.test.cjs`，不需要安装依赖。测试覆盖 1—100 级的品质上限、属性和词条预算，旧存档修复，重复发放，角色隔离，冷却保留，以及 MVU 装备守卫后的正确落位。
 
 代码在 `blackwing-summoner.js`；规则依据在 `equipment-rules.md`；1 级装备示例在 `blackwing-level-1.json`。如果修改代码，请用 `node package.cjs` 重新生成导入 JSON，再运行测试。
+
